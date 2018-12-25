@@ -17,9 +17,11 @@ comments: no
 ---
 ### 经历
 
-* 2004.09 ~ 2011.04 游学于武汉某985职业技术学院 —— 关山口职业技术学院
+* 2005.06 ~ 2008.09 浪潮LG信息技术有限公司
 
-* 2011.04 ~ Now     在深圳某国内前三互联网公司，从事搬砖、打杂等相关工作
+* 2008.09 ~ 2012.01 华为
+
+* 2012.01 ~ Now     中兴
 
 
 ----
@@ -39,8 +41,3 @@ Twitter: [hustcat](https://twitter.com/hustcat)
 
 @cnblogs：[hustcat](http://hustcat.cnblogs.com)
 
-----
-
-[![新浪微博](http://service.t.sina.com.cn/widget/qmd/1831504255/02345c5a/1.png)](http://weibo.com/u/1831504255?s=6uyXnP)
-
-----
