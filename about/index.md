@@ -37,7 +37,5 @@ comments: no
 
 GitHub：[http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
 
-Twitter: [hustcat](https://twitter.com/hustcat)
-
-@cnblogs：[hustcat](http://hustcat.cnblogs.com)
+@cnblogs：[ren_sky](http://ren_sky.cnblogs.com)
 
