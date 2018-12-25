@@ -2,7 +2,7 @@
 layout: post
 title: QoS in RoCE
 date: 2018-03-22 18:28:30
-categories: 分布式文件系统
+categories: Network
 tags: RDMA RoCE ECN PFC
 excerpt: QoS in RoCE
 ---
