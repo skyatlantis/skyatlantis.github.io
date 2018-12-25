@@ -5,6 +5,8 @@ Web pages please visit [skyatlantis.github.io](http://skyatlantis.github.io).
 
 ## 分布式文件系统
 
+* [QoS in RoCE](_posts/2018-03-22-qos-in-roce.md)
+
 ## Network
 
 * [QoS in RoCE](_posts/2018-03-22-qos-in-roce.md)
