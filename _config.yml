@@ -1,16 +1,16 @@
 future: true
 permalink: /:title/
-url: http://hustcat.github.io
-name: YY哥
-author: hustcat
+url: http://skyatlantis.github.io
+name: ren_sky
+author: ren_sky
 qq: 
-email: hustcat@gmail.com
-duoshuo: hustcat
+email: sky_atlantis@sina.com.cn
+duoshuo: ren_sky
 beian: 
 cnzz: 
-weibo: hustcat
-github: hustcat
+weibo: ren_sky
+github: skyatlantis
 paginate: 20
 highlighter: rouge
 truncate: true
-about: "YY哥(hustcat)"
+about: "ren_sky"
