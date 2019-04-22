@@ -45,6 +45,38 @@ vSphere client有什么区别?
 VMware vCenter server 是一个中心化的管理应用。你可以通过它管理所有的虚拟机和 ESXi 物理机。vSphere client 可以通过访问 
 vCenter Server 来管理 EXSi 服务器。
 
+什么是RDM？
+------
+    RDM 是独立 VMFS 卷中的映射文件，它可充当裸物理存储设备的代理。RDM 允许虚拟机直接访问和使用存
+储设备。RDM 包含用于管理和重定向对物理设备进行磁盘访问的元数据。该文件具有直接访问物理设备的一些优点，
+同时保留了 VMFS 中虚拟磁盘的一些优点。因此，它可以将 VMFS易管理性结合到裸设备访问中。
+RDM 可以用“将裸设备映射到数据存储”、“映射系统 LUN”或“将磁盘文件映射到物理磁盘卷”等短语来
+描述。所有这些短语均指 RDM。
+
+什么是VAAS？
+------
+     软件供应商可以使用 vSphere API for Storage Awareness (VASA) 为 vSphere 提供有关特定磁盘阵列的信息，
+以便在存储与虚拟基础架构之间实现更紧密的集成。 共享的信息包括有关存储虚拟化的详细信息，如运行状况、配置、
+容量和精简配置等。 这一级别的详细信息现在可通过 vCenter Server 传递给用户。
+     可以收集有关特定磁盘阵列功能特性（例如快照、重复数据消除、复制状态、RAID 级别以及是精简配置还是厚配置）以及状态（运行状况、故障排除等）的信息。
+管理员在创建虚拟机时可以根据有关底层磁盘的容量、性能和功能的高级详细信息轻松选择最合适的存储资源。
+可与 vSphere 的其他功能（如 Storage DRS 和配置文件驱动的存储）集成。
+阵列集成 API 随附在 VMware vSphere Enterprise Plus Edition中。
+
+什么是VAAI？
+------
+    vSphere 提供一个API 用以将特定存储操作的负载分流到受支持的磁盘阵列，从而拥有无可比拟的性能和效率。 借助 vSphere API for Array Integration (VAAI)，vSphere 能够更快地执行关键操作，并减少 CPU、内存和存储带宽使用量。
+将数据块复制和数据块清零操作的负载分流到阵列。
+支持在采用精简配置的阵列中进行废弃空间回收和发出空间不足警告。
+完全支持 NAS 以及基于数据块的存储。
+这些 API 随附在 VMware vSphere Enterprise Edition 和 Enterprise Plus Edition中。
+
+什么是VADP？
+    借助含 vSphere APIs for Data Protection (VADP) 的备份软件，可以进行可扩展的备份，而不会造成应用程序和用户的中断。 通过 VADP，备份软件可以执行集中式的虚拟机备份，避免在每个虚拟机内运行备份任务所造成的中断和开销。
+可对虚拟机执行完整、差异及增量映像备份和恢复。
+可以使用受支持的 Windows 和 Linux 操作系统执行文件级虚拟机备份。
+通过对运行受支持的 Microsoft Windows 操作系统的虚拟机使用 Microsoft 卷影复制服务 (VSS)，可确保数据一致性。
+vSphere API for Data Protection 随附在 VMware vSphere 所有版本和工具包中。
 
 https://zhuanlan.zhihu.com/p/32873934
 © 2019 GitHub, Inc.
