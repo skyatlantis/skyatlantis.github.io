@@ -1,0 +1,50 @@
+
+---
+layout: post
+title:  VMware基本概念
+date: 2019-04-22
+categories: 云计算基础
+tags: 云计算
+excerpt: VMware基本概念
+---
+
+前言
+------
+本文档主要介绍Vmware虚拟机化技术
+
+云计算
+------
+
+背景
+------
+Vmware最开始是从单虚拟机应用发展而来，比如我们在PC机上安装的vmware workstation，而随着云技术的发展，
+VMware已经发展为业界虚拟机方案之一，与基于开源KVM、XEN的虚拟机技术的开源管理框架OpenStack并驾齐驱。
+
+基本概念
+------
+
+Vmware是什么？
+------
+    VMware Inc. 是一家软件公司。它开发了许多产品，尤其是各种云解决方案 。他的云解决方案包括云产品，数据中心产品和桌面产品等。
+
+什么是vSphere?
+------
+    vSphere 是在数据中心产品下的一套软件。vSphere 类似微软的 Office 办公套件,它只是一个包含其它组件的集合,
+ESXi, vSphere client 和 vCeneter 都是 vSphere 的组件
+
+什么是ESXi?
+------
+    ESXi是VSphere中最重要的组件，为虚拟化软件，所有的虚拟机都运行在ESXi之上。
+
+什么是Vcenter?
+------
+    管理和访问这些虚拟机，你需要另外的 vSphere 套件，也就是 vSphere client 或 vCenter。vSphere client允许管理员访问 ESXi 服务并管理虚拟机。
+vSphere client 是安装在客户机(也就是管理员的笔记本)上面。vSphere client 被用来连接 ESXi 服务器和管理任务。那么什么是 vCenter?和
+vSphere client有什么区别?
+    vCenter server 和 vSphere client 很像，但是它和功能更加强大。vCenter server 是安装在 Window 服务器或 Linux 服务器里面。
+VMware vCenter server 是一个中心化的管理应用。你可以通过它管理所有的虚拟机和 ESXi 物理机。vSphere client 可以通过访问 
+vCenter Server 来管理 EXSi 服务器。
+
+
+https://zhuanlan.zhihu.com/p/32873934
+© 2019 GitHub, Inc.
