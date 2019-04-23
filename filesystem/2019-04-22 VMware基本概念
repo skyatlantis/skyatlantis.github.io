@@ -72,11 +72,22 @@ RDM 可以用“将裸设备映射到数据存储”、“映射系统 LUN”或
 这些 API 随附在 VMware vSphere Enterprise Edition 和 Enterprise Plus Edition中。
 
 什么是VADP？
+------
     借助含 vSphere APIs for Data Protection (VADP) 的备份软件，可以进行可扩展的备份，而不会造成应用程序和用户的中断。 通过 VADP，备份软件可以执行集中式的虚拟机备份，避免在每个虚拟机内运行备份任务所造成的中断和开销。
 可对虚拟机执行完整、差异及增量映像备份和恢复。
 可以使用受支持的 Windows 和 Linux 操作系统执行文件级虚拟机备份。
 通过对运行受支持的 Microsoft Windows 操作系统的虚拟机使用 Microsoft 卷影复制服务 (VSS)，可确保数据一致性。
 vSphere API for Data Protection 随附在 VMware vSphere 所有版本和工具包中。
 
+Vmware支持的后端存储类型
+------
+根据所使用的存储器，数据存储可分为以下类型：
+由虚拟机文件系统格式支持的 VMFS 数据存储。请参见第 136 页，“了解 VMFS 数据存储”。
+由网络文件系统 NFS 格式支持的 NFS 数据存储。请参见第 142 页，“了解网络文件系统数据存储”。
+Virtual SAN 数据存储。请参见 《管理 VMware Virtual SAN》文档。
+虚拟卷数据存储。请参见第 199 页，第 19 章“使用虚拟卷”。
+
+
+https://docs.vmware.com/cn/VMware-vSphere/6.0/vsphere-esxi-vcenter-server-601-storage-guide.pdf
 https://zhuanlan.zhihu.com/p/32873934
 © 2019 GitHub, Inc.
