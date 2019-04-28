@@ -1,4 +1,18 @@
+---
+layout: post
+title:   GlusterFS介绍
+date: 2019-04-28
+categories: 分布式文件系统
+tags: 文件系统
+excerpt: 文件系统基本概念
+---
 
+前言
+------
+
+
+CephFS特性介绍
+------
 1. Cache一致性实现
    GlusterFS对于客户端Cache实现比较简单，它只实现了客户端的读Cache，没有实现客户端的写Cache功能,并且读Cache
    也只实现了弱一致性功能，没有像Ceph实现了强一致性。其GlusterFS的客户端缓存是基于设置的缓存有效时间来进行重新
