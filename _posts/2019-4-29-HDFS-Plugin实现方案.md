@@ -187,6 +187,171 @@ HDFS Plugin通过继承开源HDFS提供的FileSystem类和AbstractFileSystem类�
 
 数据存储与任务调度机制对比
 
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 12">
+<link rel=File-List href="ccc.files/filelist.xml">
+<style id="abc_4712_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font54712
+	{color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Book Antiqua", serif;
+	mso-font-charset:0;}
+.font64712
+	{color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;}
+.font74712
+	{color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.xl154712
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl654712
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimHei, monospace;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:1.0pt solid black;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl664712
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:1.0pt solid black;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl674712
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:1.0pt solid black;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl684712
+	{padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:#333333;
+	font-size:10.5pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Book Antiqua", serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border:1.0pt solid black;
+	background:white;
+	mso-pattern:black none;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>&#12288;&#12288;<![endif]-->
+<!--&#19979;&#21015;&#20449;&#24687;&#30001; Microsoft Office Excel
+&#30340;&#8220;&#21457;&#24067;&#20026;&#32593;&#39029;&#8221;&#21521;&#23548;&#29983;&#25104;&#12290;-->
+<!--&#22914;&#26524;&#21516;&#19968;&#26465;&#30446;&#20174; Excel
+&#20013;&#37325;&#26032;&#21457;&#24067;&#65292;&#21017;&#25152;&#26377;&#20301;&#20110;
+DIV
+&#26631;&#35760;&#20043;&#38388;&#30340;&#20449;&#24687;&#22343;&#23558;&#34987;&#26367;&#25442;&#12290;-->
+<!----------------------------->
+<!--&#8220;&#20174; EXCEL
+&#21457;&#24067;&#32593;&#39029;&#8221;&#21521;&#23548;&#24320;&#22987;-->
+<!----------------------------->
+
+<div id="abc_4712" align=center x:publishsource="Excel">
+
 <table border=0 cellpadding=0 cellspacing=0 width=724 style='border-collapse:
  collapse;table-layout:fixed;width:543pt;empty-cells: show;border-spacing: 0px;
  max-width: 800px !important;font-variant-ligatures: normal;font-variant-caps: normal;
@@ -260,5 +425,16 @@ HDFS Plugin通过继承开源HDFS提供的FileSystem类和AbstractFileSystem类�
  </tr>
  <![endif]>
 </table>
+
+</div>
+
+
+<!----------------------------->
+<!--&#8220;&#20174; EXCEL
+&#21457;&#24067;&#32593;&#39029;&#8221;&#21521;&#23548;&#32467;&#26463;-->
+<!----------------------------->
+</body>
+
+</html>
 
 
