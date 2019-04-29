@@ -28,170 +28,29 @@ HDFS Plugin实现
 HDFS Plugin通过继承开源HDFS提供的FileSystem类和AbstractFileSystem类，对外提供如下表所示的文件访问接口。
 类实现的接口如下：
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="../css/markdown.css">
-<table border=0 cellpadding=0 cellspacing=0 width=509 style='border-collapse:
- collapse;table-layout:fixed;width:382pt;empty-cells: show;border-spacing: 0px;
- max-width: 800px !important;font-variant-ligatures: normal;font-variant-caps: normal;
- orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
- text-decoration-style: initial;text-decoration-color: initial;border-color:
- initial'>
- <col width=137 style='mso-width-source:userset;mso-width-alt:4384;width:103pt'>
- <col width=147 style='mso-width-source:userset;mso-width-alt:4704;width:110pt'>
- <col width=225 style='mso-width-source:userset;mso-width-alt:7200;width:169pt'>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl6919427 width=137 style='height:14.25pt;width:103pt;
-  overflow-wrap: break-word;max-width: 800px'><span style='white-space:inherit !important'>&#31867;</span></td>
-  <td class=xl6919427 width=147 style='border-left:none;width:110pt;overflow-wrap: break-word;
-  max-width: 800px;border-left-color:initial'><span style='white-space:inherit !important'>&#20989;&#25968;&#21517;&#31216;</span></td>
-  <td class=xl6919427 width=225 style='border-left:none;width:169pt;overflow-wrap: break-word;
-  max-width: 800px;border-left-color:initial'><span style='white-space:inherit !important'>&#25551;&#36848;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td rowspan=12 height=244 class=xl7019427 width=137 style='height:183.0pt;
-  border-top:none;width:103pt;overflow-wrap: break-word;max-width: 800px;
-  border-top-color:initial'><span style='white-space:inherit !important'>FileSystem</span></td>
-  <td class=xl7019427 width=147 style='border-top:none;border-left:none;
-  width:110pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>initialize</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#21021;&#22987;&#21270;<font
-  class="font519427">HDFS Plugin</font><font class="font619427">&#12290;</font></span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>getFileBlockLocations</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#33719;&#21462;&#25991;&#20214;&#20559;&#31227;&#20449;&#24687;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>append</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#36861;&#21152;&#20889;&#25991;&#20214;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>create</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#21019;&#24314;&#25991;&#20214;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>delete</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#21024;&#38500;&#25991;&#20214;&#25110;&#32773;&#25991;&#20214;&#22841;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>getFileStatus</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#33719;&#21462;&#25991;&#20214;&#30340;&#20449;&#24687;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>listStatus</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#21015;&#20030;&#25991;&#20214;&#30340;&#20449;&#24687;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>open</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#25171;&#24320;&#25991;&#20214;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>rename</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#37325;&#21629;&#21517;&#25991;&#20214;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>mkdirs</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#21019;&#24314;&#25991;&#20214;&#22841;&#12290;</span></td>
- </tr>
- <tr height=35 style='height:26.25pt'>
-  <td height=35 class=xl7019427 width=147 style='height:26.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>setOwner</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#35774;&#32622;&#25991;&#20214;&#25110;&#32773;&#25991;&#20214;&#22841;&#30340;&#23646;&#20027;&#19982;&#23646;&#32452;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl7019427 width=147 style='height:14.25pt;border-top:
-  none;border-left:none;width:110pt;overflow-wrap: break-word;max-width: 800px;
-  border-left-color:initial;border-top-color:initial'><span style='white-space:
-  inherit !important'>setPermission</span></td>
-  <td class=xl7119427 width=225 style='border-top:none;border-left:none;
-  width:169pt;overflow-wrap: break-word;max-width: 800px;border-left-color:
-  initial;border-top-color:initial'><span style='white-space:inherit !important'>&#35774;&#32622;&#25991;&#20214;&#25110;&#32773;&#25991;&#20214;&#22841;&#30340;&#26435;&#38480;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td rowspan=2 height=38 class=xl6719427 width=137 style='border-bottom:1.0pt solid black;
-  height:28.5pt;border-top:none;width:103pt;overflow-wrap: break-word;
-  max-width: 800px;border-top-color:initial'><span style='white-space:inherit !important'>AbstractFileSystem</span></td>
-  <td class=xl6519427 width=147 style='width:110pt;overflow-wrap: break-word;
-  max-width: 800px;border-left-color:initial;border-top-color:initial'><span
-  style='white-space:inherit !important'>createSymlink</span></td>
-  <td class=xl6619427 width=225 style='width:169pt;overflow-wrap: break-word;
-  max-width: 800px;border-left-color:initial;border-top-color:initial'><span
-  style='white-space:inherit !important'>&#21019;&#24314;&#19968;&#20010;&#36719;&#36830;&#25509;&#12290;</span></td>
- </tr>
- <tr height=19 style='height:14.25pt'>
-  <td height=19 class=xl6519427 width=147 style='height:14.25pt;width:110pt;
-  overflow-wrap: break-word;max-width: 800px;border-left-color:initial;
-  border-top-color:initial'><span style='white-space:inherit !important'>getFileLinkStatus</span></td>
-  <td class=xl6619427 width=225 style='width:169pt;overflow-wrap: break-word;
-  max-width: 800px;border-left-color:initial;border-top-color:initial'><span
-  style='white-space:inherit !important'>&#33719;&#21462;&#32473;&#23450;&#36719;&#36830;&#25509;&#23545;&#24212;&#30340;&#25991;&#20214;&#20449;&#24687;&#12290;</span></td>
- </tr>
- <![if supportMisalignedColumns]>
- <tr height=0 style='display:none'>
-  <td width=137 style='width:103pt'></td>
-  <td width=147 style='width:110pt'></td>
-  <td width=225 style='width:169pt'></td>
- </tr>
- <![endif]>
-</table>
+|类 | 函数名称 |  描述|  
+|-|-|-
+|FileSystem | initialize | 初始化HDFS Plugin。 |
+|FileSystem | getFileBlockLocations | 获取文件偏移信息。 |
+|FileSystem | append | 追加写文件。 |
+|FileSystem | create | 创建文件。 |
+|FileSystem | delete | 删除文件或者文件夹。 |
+|FileSystem | getFileStatus | 获取文件的信息。 |
+|FileSystem | listStatus | 列举文件的信息。 |
+|FileSystem | open | 打开文件。 |
+|FileSystem | rename | 重命名文件。 |
+|FileSystem | mkdirs | 创建文件夹。 |
+|FileSystem | setOwner | 设置文件或者文件夹的属主与属组。 |
+|FileSystem | setPermission | 设置文件或者文件夹的权限。 |
+|FileSystem | createSymlink | 创建一个软连接。 |
+|FileSystem | getFileLinkStatus | 获取给定软连接对应的文件信息。 |
 
 数据存储与任务调度机制对比
 
-name | 价格 |  数量  
--|-|-
-香蕉 | $1 | 5 |
-苹果 | $1 | 6 |
-草莓 | $1 | 7 |
+|对比项 | 开源HDFS |  HDFS Plugin+| 
+|-|-|-|
+|数据块存储机制 | 文件按所定义的块大小和副本机制存储在多个DataNode中 | 文件被切分为Strip，通过矩阵运算生成若干个校验Strip，然后将这些Strip存储在多个节点中 |
+|数据块存储机制 | $默认数据块大小为64MB，一般设置为64MB～128MB；默认采用三副本机制 | Strip大小可设置为256KB、128KB、32KB或16KB，保护级别可设置为N+1、N+2、N+3、N+4、N+2:1和N+3:1模式 |
+|任务调度策略 | 采用本地优先原则、数据就近获取原则，尽可能将任务分配给靠近数据所在节点中执行，减少网络中的数据搬迁量 | 计算与存储物理分离，所有计算节点到存储节点的路径开销相等 |
 
 
