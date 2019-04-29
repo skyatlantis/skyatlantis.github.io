@@ -7,6 +7,7 @@ Web pages please visit [skyatlantis.github.io](http://skyatlantis.github.io).
 
 * [文件系统基本概念](_posts/2018-12-25-filesystembase.md)
 * [GlusterFS介绍](_posts/2019-4-28-GlusterFS-Future.md)
+* [GlusterFS介绍](_posts/2019-4-29-HDFS-Plugin实现方案.md)
 
 ## Network
 
