@@ -28,6 +28,7 @@ HDFS Plugin实现
 HDFS Plugin通过继承开源HDFS提供的FileSystem类和AbstractFileSystem类，对外提供如下表所示的文件访问接口。
 类实现的接口如下：
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <table border=0 cellpadding=0 cellspacing=0 width=509 style='border-collapse:
  collapse;table-layout:fixed;width:382pt;empty-cells: show;border-spacing: 0px;
  max-width: 800px !important;font-variant-ligatures: normal;font-variant-caps: normal;
