@@ -29,12 +29,12 @@ HDFS Plugin通过继承开源HDFS提供的FileSystem类和AbstractFileSystem类�
 类实现的接口如下：
 
 |类 | 函数名称 |  描述|  
-|-|-|-
-|FileSystem | initialize | 初始化HDFS Plugin。 |
-|FileSystem | getFileBlockLocations | 获取文件偏移信息。 |
-|FileSystem | append | 追加写文件。 |
-|FileSystem | create | 创建文件。 |
-|FileSystem | delete | 删除文件或者文件夹。 |
+|:-|:-|:-|
+|FileSystem | initialize              | 初始化HDFS Plugin。 |
+|FileSystem | getFileBlockLocations   | 获取文件偏移信息。 |
+|FileSystem | append                  | 追加写文件。 |
+|FileSystem | create                  | 创建文件。 |
+|FileSystem | delete                  | 删除文件或者文件夹。 |
 |FileSystem | getFileStatus | 获取文件的信息。 |
 |FileSystem | listStatus | 列举文件的信息。 |
 |FileSystem | open | 打开文件。 |
