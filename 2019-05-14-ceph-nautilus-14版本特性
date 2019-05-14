@@ -1,0 +1,17 @@
+---
+layout: post
+title:  ceph-nautilus-14版本特性
+date: 2019-05-13
+categories: 分布式文件系统 高性能 ceph
+tags: 文件系统 ceph
+excerpt: ceph-nautilus-14版本特性
+---
+ 
+ 
+ 
+ceph-nautilus发布时间
+------
+正式发布时间为2019-3-18   
+https://github.com/ceph/ceph/releases/tag/v14.2.0
+
+
