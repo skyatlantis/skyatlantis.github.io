@@ -1,0 +1,35 @@
+---
+layout: post
+title:  ceph-nautilus-14版本特性
+date: 2019-05-13
+categories: 分布式文件系统 高性能 ceph
+tags: 文件系统 ceph
+excerpt: ceph-nautilus-14版本特性
+---
+ 
+ 
+ 
+ceph-nautilus发布时间
+------
+正式发布时间为2019-3-18   
+https://github.com/ceph/ceph/releases/tag/v14.2.0
+
+易用性---dashboard
+------
+基于suse的OpenATTIC实现，基于ceph-mgr来实现HA和管理，且数据保存到ceph-mgr的数据库中（实际是ceph-mon的数据库中）；    
+管理功能包括RADOS、RBD、RGW、CEPHFS和NFS-Ganesha等模块；集成来自ceph-metrics的grafana仪表板。    
+
+
+易用性---ORCHESTRATOR
+------
+ORCHESTRATOR做为部署管理协调器，实现基于ROOK、DeepSea、ceph-ansible或SSH方式来统一管理和部署ceph集群资源。    
+
+易用性---PG自动平衡模块
+
+易用性---设备健康测量
+
+易用性---crash报告
+
+
+
+
