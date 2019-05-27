@@ -14,6 +14,7 @@ Web pages please visit [skyatlantis.github.io](http://skyatlantis.github.io).
 * [Ceph-Fuse性能调优](_posts/2019-05-09-Ceph-Fuse性能调优.md)
 * [分布式存储厂商全集](_posts/2019-05-13-分布式存储厂商全集-持续更新.md)
 * [NAS端口号整理](_posts/2019-05-20-NAS端口号整理.md)
+* [存储基础知识](_posts/2019-05-25-存储基础知识-持续更新.md)
 * [CephFS灾难恢复](_posts/2019-05-27-CephFS灾难恢复.md)
 
 ## Network
