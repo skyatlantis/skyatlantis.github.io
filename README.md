@@ -8,7 +8,13 @@ Web pages please visit [skyatlantis.github.io](http://skyatlantis.github.io).
 * [文件系统基本概念](_posts/2018-12-25-filesystembase.md)
 * [GlusterFS介绍](_posts/2019-4-28-GlusterFS-Future.md)
 * [HDFS-Plugin实现方案](_posts/2019-4-29-HDFS-Plugin实现方案.md)
-* [分布式存储厂商全集](_posts/2019-05-13-分布式存储厂商全集-持续更新.md）
+* [cephfs与spark](_posts/2019-04-30-cephfs与spark.md)
+* [ceph与rdma](_posts/2019-05-07-ceph与rdma.md)
+* [Ceph文件测试工具介绍](_posts/2019-05-08-Ceph文件测试工具介绍.md)
+* [Ceph-Fuse性能调优](_posts/2019-05-09-Ceph-Fuse性能调优.md)
+* [分布式存储厂商全集](_posts/2019-05-13-分布式存储厂商全集-持续更新.md)
+* [NAS端口号整理](_posts/2019-05-20-NAS端口号整理.md)
+* [CephFS灾难恢复](_posts/2019-05-27-CephFS灾难恢复.md)
 
 ## Network
 
