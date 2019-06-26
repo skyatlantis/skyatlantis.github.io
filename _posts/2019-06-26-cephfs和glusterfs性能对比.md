@@ -9,6 +9,8 @@ excerpt: cephfs与glusterfs性能对比
 
 
 
+测试结果
+---
 
 | 测试模型| GlusterFS(iops/lat)| CephFS-Fuse(iops/lat)| CephFS Re-export NFS(v4)(iops/lat)| CephFS-kernel(iops/lat)|
 |:-----|-----:|:-----|-----:|:-----|
